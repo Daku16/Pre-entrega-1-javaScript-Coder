@@ -35,9 +35,6 @@ do {
     }
 } while (menu)
 
-console.log(mascotas.filter(mascota =>  {
-    return mascota.nombre
-}))
 let menu2 = true
 
 while (menu2) {
@@ -87,9 +84,6 @@ while (menu2) {
             let opcion = parseInt(prompt("Que medicamento deseas apartar? \n1) Antipulgas - 80000$ \n2) Antiparasitario 50000$ \n3) Suplemento Alimenticio 25000$\n4) Solución Oral 60000$\n5) Vitaminas 30000$"))
             if(opcion >= 0 && opcion <= 5) {
                 medicina.asignarMedicina(opcion)
-                for (const mascota of mascotas) {
-                    console.log(mascota)
-                }
             } else {
                 alert("Opcion invalida")
             }
